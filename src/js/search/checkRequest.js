@@ -10,6 +10,9 @@ import { OMD_API_KEY } from '../../../environment';
 const checkRequest = async (newRequestText) => {
   const modifyNewRequestText = `"${newRequestText}".`;
   try {
+    if (!OMD_API_KEY) {
+      return console.error(`API key not found :(, \n current API key(OMD_API_KEY) =${OMD_API_KEY}`);
+    }
     const url = `https://www.omdbapi.com/?s=${newRequestText}&page=1&apikey=${OMD_API_KEY}`;
     const response = await fetch(url);
 
