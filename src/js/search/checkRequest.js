@@ -2,9 +2,10 @@ import { deleteLoader } from './displayLoader';
 import { showForMessageBlock } from './toggleDisplayMessageBlock';
 import { createSlides } from '../slider/createSlides';
 import { TEXT_MESSAGE_ERROR, TEXT_MESSAGE_INFO } from '../constants/constants';
-// import { OMD_API_KEY } from '../../../environment';
 import { mySwiper } from '../vendor/initSwiper';
 import { initLocalStorage } from '../utils/initLocalStorage';
+import { OMD_API_KEY } from '../../../environment';
+
 
 const checkRequest = async (newRequestText) => {
   const modifyNewRequestText = `"${newRequestText}".`;

@@ -1,4 +1,4 @@
-// import { OMD_API_KEY } from '../../../environment';
+import { OMD_API_KEY } from '../../../environment';
 import { createMovieCard } from '../slider/createMovieCard';
 import { mySwiper } from '../vendor/initSwiper';
 import { initLocalStorage } from '../utils/initLocalStorage';

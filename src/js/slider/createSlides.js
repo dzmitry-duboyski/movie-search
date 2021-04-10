@@ -1,6 +1,6 @@
 
 import { createLoader, deleteLoader } from '../search/displayLoader';
-// import { OMD_API_KEY } from '../../../environment';
+import { OMD_API_KEY } from '../../../environment';
 import { createMovieCard } from './createMovieCard';
 import { mySwiper } from '../vendor/initSwiper';
 import {
