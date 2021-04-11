@@ -61,7 +61,7 @@ async function createSlides (requestText, pages = HOW_MANY_PAGES_TO_LOAD) {
     getFilmsListID.forEach((filmId) => {
       const urlForIMDb = `https://www.omdbapi.com/?i=${filmId}&apikey=${OMD_API_KEY}`;
       fetch(urlForIMDb)
-        .then((response) => {
+        .then(response => {
           if (response.ok) {
             return response.json();
           }

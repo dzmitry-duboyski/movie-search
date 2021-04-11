@@ -24,7 +24,6 @@ const checkRequest = async (newRequestText) => {
     const data = await response.json();
     const isResponseBrocken = data.Response === 'False';
     if (isResponseBrocken) {
-
       console.error(`Error: ${data.Error}`);
       return showForMessageBlock(TEXT_MESSAGE_ERROR.VIDEO_NOT_FOUND, modifyNewRequestText);
     }
@@ -40,7 +39,6 @@ const checkRequest = async (newRequestText) => {
     mySwiper.removeAllSlides();
     localStorage.setItem('currentQuery', newRequestText);
     createSlides(newRequestText);
-
   } catch (e) {
     console.error(e);
   }

@@ -1,4 +1,3 @@
-
 const TEXT_MESSAGE_ERROR = {
   EMPTY_REQUEST: 'Enter movie name.',
   SHORT_REQUEST: 'Мery short request, write the name in full.',

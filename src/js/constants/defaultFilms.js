@@ -4,6 +4,5 @@ export default const defaultFilms = [
     poster:
     year:
     rating:
-
   },
 ]

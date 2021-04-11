@@ -15,4 +15,4 @@ const deleteModalWindowFilmCard = () => {
   mySwiper.addSlide(currentIndex, currentSlide);
 };
 
-export { deleteModalWindowFilmCard }
+export { deleteModalWindowFilmCard };
