@@ -28,6 +28,9 @@ async function createSlides (requestText, pages = HOW_MANY_PAGES_TO_LOAD) {
   let pageToLoad = Number(localStorage.getItem('numberPageToLoad'));
 
   try {
+    if (!OMD_API_KEY) {
+      return console.error(`API key not found :( \n OMD_API_KEY=${OMD_API_KEY}`);
+    }
     const url = `https://www.omdbapi.com/?s=${requestText}&page=${pageToLoad}&apikey=${OMD_API_KEY}`;
     const response = await fetch(url);
 
