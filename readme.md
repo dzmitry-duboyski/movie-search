@@ -9,7 +9,7 @@
 6. View detailed information about the film (when you click on the poster of the film, a pop-up will open and detailed information about the film).  
 
 ### Search and view movie information:
-![screenshot](./assets/readme.md/find.gif)   
+![screenshot](./src/assets/readme.md/find.gif)   
 
 ### Adaptive design:
-![screenshot](./assets/readme.md/adaptive.gif)   
+![screenshot](./src/assets/readme.md/adaptive.gif)   
